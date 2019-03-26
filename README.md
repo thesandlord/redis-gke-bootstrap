@@ -94,13 +94,15 @@ kubectl expose deployment php-guestbook --type=NodePort --port=80 --target-port=
 This will expose a port on the IP address you found earlier. Save the port to an environment variable:
 
 ```
-NODEPORT=$(kubectl get -o jsonpath="{.spec.ports[0].nodePort}" services php-guestbook)
+PHP_GUESTBOOK_PORT=$(kubectl get -o jsonpath="{.spec.ports[0].nodePort}" services php-guestbook)
 ```
+
+Remember, each service you expose with a NodePort will have a different port number, so make sure you save them to different variables.
 
 Now, you can visit the combined URL to see your new app in action:
 
 ```
-echo http://${NODE}:${NODEPORT}
+echo http://${NODE}:${PHP_GUESTBOOK_PORT}
 ```
 
 # Cleaning Up
