@@ -6,7 +6,7 @@ If you have never used Google Cloud Platform before, create a new account here: 
 
 To get started, click the following button:
 
-[![Open in Cloud Shell](//gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/thesandlord/redis-gke-bootstrap.git)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/thesandlord/redis-gke-bootstrap.git)
 
 This will open Google Cloud Shell and automatically clone this repository.
 
